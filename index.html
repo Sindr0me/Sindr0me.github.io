@@ -81,21 +81,24 @@
 			/*display: flex;*/
 		}
 		
-		@media only screen and (max-width: 1010px){ 
+		@media only screen and (max-width: 480px){ 
 
-	#body{
-			margin-top: 50px;
-			margin-left: -53%;
-			width:200%;
-			padding: 20px 20px 100px 20px;
-			background-color: black;
-		}
-	#tab-container{
+		#tab-container{
 		width: 100%;
 		background-color: #EAF2FF;
 			border-radius: 3px;
 			overflow: hidden;
 			margin: auto;
+		}
+			
+		.tab-wrapper .tab-item,
+		.tab-wrapper input{display: none;}
+		.tab-wrapper .tab-item{
+			/*background-color: #fff;*/
+/* 			width: calc(100% - 40px); */
+			max-width: 100%;
+			padding: 20px;
+			order: 1;
 		}
 }
 		
