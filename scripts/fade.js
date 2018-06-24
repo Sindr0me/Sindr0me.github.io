@@ -1,9 +1,9 @@
 
-$(document).ready(function(){
+$(document).ready(setTimeout(function(){
     
     $("#icons").slideToggle(500);
     $("#body").fadeIn(1500);
-});
+},100));
 
 
 $("#tab1").click(function(){
