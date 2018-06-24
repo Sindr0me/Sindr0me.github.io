@@ -16,6 +16,10 @@ body{
         margin-top: 50px;
         display: flex;
         justify-content: center;
+        /* display: none; */
+    }
+    #icons {
+        display: none;
     }
     .tele {
         margin-right: 100px;
@@ -61,6 +65,8 @@ body{
         /*width:100%;*/
         padding: 20px 20px 100px 20px;
         background-color: black;
+        
+        display: none;
     }
     .tab-container{
         background-color: #EAF2FF;
@@ -68,9 +74,6 @@ body{
         overflow: hidden;
         width: 50%;
         margin: auto;
-
-
-        /*display: flex;*/
     }
     
     
@@ -240,6 +243,10 @@ font-size: 12px;
 
 .money {
 color: green;
+}
+
+.none {
+    display: none;
 }
     
 @media only screen and (max-width: 480px){ 
