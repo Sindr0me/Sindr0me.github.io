@@ -6,283 +6,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<title>junior web разработчик Москва Верстка html работа с компьютером и в команде</title>
-	<style>
-			
-	body{
-		background-color: black;
-		/*display: flex;*/
-		font-family: 'Roboto', sans-serif;
-	}
-
-	
-	/*.flex-container {
-		}*/
-		.block {
-			display: flex;
-			justify-content: center;
-			background-color: black;
-		}
-		.icons {
-			margin-top: 50px;
-			display: flex;
-			justify-content: center;
-		}
-		.tele {
-			margin-right: 100px;
-			width: 80px;
-			height: 80px;
-			transition: all linear .25s;
-			-webkit-transition: all linear .25s;
-		}
-		.tele:hover {
-			transform: scale(1.2);
-			width: 80px;
-			height: 80px;
-			margin-left: 0px;
-			transition: 1s;
-			cursor: pointer;
-
-			text-decoration: none;
-
-		}
-		.git {
-			width: 80px;
-			height: 80px;
-			transition: all linear .25s;
-			-webkit-transition: all linear .25s;
-			/*padding: 30px;*/
-		}
-		.git:hover {
-			transform: scale(1.2);
-			width: 80px;
-			height: 80px;
-			margin-left: 0px;
-			transition: 1s;
-			cursor: pointer;
-
-			text-decoration: none;
-		}
-
-	/*------------------ТАБЫ-----------*/
-	
-		
-		#body{
-			margin-top: 50px;
-			/*width:100%;*/
-			padding: 20px 20px 100px 20px;
-			background-color: black;
-		}
-		.tab-container{
-			background-color: #EAF2FF;
-			border-radius: 3px;
-			overflow: hidden;
-			width: 50%;
-			margin: auto;
-
-
-			/*display: flex;*/
-		}
-		
-		
-		.tab-title{
-			/*font-family: sans-serif;*/
-			color: #404040;
-			margin: 10px;
-			font-weight: normal;
-			font-size: 18px;
-		}
-		.tab-wrapper{
-			width: 100%;
-			overflow-x: scroll;
-			display: flex; 
-			flex-wrap: wrap;
-			align-items: flex-start;
-			justify-content: flex-start;
-			/*font-family: sans-serif;*/
-		}
-		.tab-wrapper .tab-item,
-		.tab-wrapper input{display: none;}
-		.tab-wrapper .tab-item{
-			/*background-color: #fff;*/
-			width: calc(100% - 40px);
-			max-width: 100%;
-			padding: 20px;
-			order: 1;
-		}
-		.tab-wrapper label{
-			height: 35px;
-			line-height: 35px;
-			min-width: 50px;
-			padding: 0px 20px;
-			text-align: center;
-			color: #404040;
-			white-space: nowrap;
-			overflow: hidden;
-			text-overflow: ellipsis;
-			align-items: center;
-			justify-content: center;
-			flex-grow: 1;
-			border-top: 3px solid transparent;
-			border-bottom: 3px solid transparent;
-			cursor: pointer;
-
-		}
-
-		.tab-wrapper label:hover{
-		color: black;
-
-		}
-
-		.no-select{
-			-webkit-user-select: none;
-			-moz-user-select: none;
-			-ms-user-select: none;
-		}
-		.tab-wrapper input:checked + label{
-			border-bottom: 3px solid black;
-			color: black;
-		}
-		.tab-wrapper input:checked + label + .tab-item{display: block;}
-
-		.tab-item {
-			background-color: #EAF2FF;
-			overflow: hidden;
-
-	}
-
-	#tab-content2 {
-		margin: 30px;
-	}
-
-  /*ТАБЫ конец*/
-
-.about-container {
-	display: flex;
-	flex-direction: row;
-	padding: 40px;
-	flex-wrap: wrap;
- }
-
- .myphoto {
-    border-radius: 100px; /* Радиус скругления */
-    border: 0px solid white; /* Параметры рамки */
-    box-shadow: 0 0 7px #666; /* Параметры тени */
-    width: 180px;
-    height: 180px;
-   }
-.info {
-	font-family: 'Roboto', sans-serif;
-	padding-left: 30px;
-	margin-top: -15px;
-}
-.images-container {
-	display: flex;
-	justify-content: center;
-	max-width: 100%;
-	flex-wrap: wrap;
-}
-
-.for_icons {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-}
-.for_icons img {
-    flex-grow: 0;
-    flex-shrink: 1; 
-    max-width: 100%;
-}
-figcaption {
-	padding-top: 10px;
-	font-size: 12px;
-}
-ul {
-   list-style-image: url(images/icon1.png); /* Путь к изображению маркера */
-   }
-li {
-	padding-top: 10px;
-}
-
-/*-----------------ИКОНКИ СВЯЗИ--------------------*/
-.facebook {
-	width: 35px;
-	height: 35px;
-	background-image: url(images/facebook1.png);
-}
-.facebook:hover {
-	width: 35px;
-	height: 35px;
-	background-image: url(images/facebook2.png);
-	cursor: pointer;
-}
-.vk {
-	width: 35px;
-	height: 35px;
-	background-image: url(images/vk2.png);
-}
-.vk:hover {
-	width: 35px;
-	height: 35px;
-	background-image: url(images/vk1.png);
-	cursor: pointer;
-}
-.icons_wrapper {
-	display: flex;
-	flex-direction: row;
-
-}
-
-.expirience p{
-	margin-left: 50px;
-
-}
-.expirience h3{
-	margin-left: 40px;
-
-}
-
-.expirience ul{
-	margin-left: 60px;
-	font-size: 12px;
-
-}
-
-.money {
-	color: green;
-}
-		
-	@media only screen and (max-width: 480px){ 
-			
-		#body{
-			margin-top: 50px;
-			width:100%;
- 			padding: 0px;
-			background-color: black;
-			    font-size: 1.3em;
-		}
-			
-		.tab-container{
-		width: 100%;
-		background-color: #EAF2FF;
-			border-radius: 3px;
-			overflow: hidden;
-/* 			margin: auto; */
-/* 			margin-left: -27px; */
-		}
-			
-		.tab-wrapper .tab-item,
-		.tab-wrapper input{display: none;}
-		.tab-wrapper .tab-item{
-			/*background-color: #fff;*/
-/* 			width: calc(100% - 40px); */
-			max-width: 100%;
-/* 			padding: 20px; */
-			order: 1;
-		}
-}	
-		
-	</style>
+	<!-- <style src='styles/style.css'></style> -->
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 <body>
 	<div class="block">
@@ -321,7 +46,12 @@ li {
 	   					<figure class="for_icons">
 	   					<img src="images/2.png" width="56" height="56">
 	   					<figcaption>CSS3</figcaption>
-	   					</figure>
+						</figure>
+						   
+	   					<figure class="for_icons">
+						<img src="images/9.png" width="56" height="56">
+						<figcaption>JavaScript</figcaption>
+						</figure>
 
 	   					<figure class="for_icons">
 	   					<img src="images/3.png" width="56" height="56">
@@ -352,17 +82,14 @@ li {
 	   					<img src="images/8.png" width="56" height="56">
 	   					<figcaption>JQuery</figcaption>
 	   					</figure>
-
-	   					<figure class="for_icons">
-	   					<img src="images/9.png" width="56" height="56">
-	   					<figcaption>JavaScript</figcaption>
-	   					</figure>
 	   				</div>
-	   				<hr>
+					   <hr>
+					   <p>Я начал учиться <strong>1 октября 2017</strong> года и вот что я могу:</p>
 					<ul>
 						<li>Уверенное владение HTML5 и CSS3</li>
-						<li>Решение задач с использованием JavaScript</li>
 						<li>Валидная, кроссбраузерная вёрстка</li>
+						<li>Решение задач с использованием JavaScript</li>
+						<li>Работа с AJAX, веб-сокетами</li>
 						<li>Владение графическими редакторами</li>
 						<li>Знание принципов ООП и паттернов проектирования</li>
 						<li>Работа с Git</li>
@@ -380,10 +107,10 @@ li {
 				
 				<a href="https://modulbank.ru/"><img src="images/modulbank.png" width="100%" alt=""></a>
 				<div class="expirience">
-				<h2>Опыт работы в банке: 1 год и 6 месяцев</h2>
+				<h2>Опыт работы в банке: <span id='work_time'></span></h2>
 				<h3>Должности:</h3>
 				<p>- Специалист ввода данных - 4 мес.</p>
-				<p>- Ведущий специалист по валютному контролю - настоящее время</p>
+				<p>- Ведущий специалист по валютному контролю - <strong>настоящее время</strong></p>
 
 					<ul>
 						<li>Исполнение функций валютного контролера;</li>
@@ -399,8 +126,9 @@ li {
 				<input type="radio" name="tab" id="tab3" />
 				<label class="tab-label no-select" for="tab3"><strong>Обо мне</strong></label>
 				<div class="tab-item" id="tab-content3">
-					<p>Позитивный и открытый молодой человек. Быстро учусь, хорошо схватываю, грамотен и имею чувство стиля. Ищу себя в профессии, которой хочу заниматься всю жизнь - веб разработка. Считаю данную профессию очень мобильной и нужной, как для предпринимательства, так и работы в офисе.</p>
-					<p>Пробую себя во фрилансе и ищу место, где меня примут и научат данному исскуству. Сейчас работаю в банке по специальности "Ведущий специалист валютного контроля".</p>
+					<p>Позитивный и открытый молодой человек. Быстро учусь, хорошо схватываю, грамотен и имею чувство стиля. Ищу себя в профессии, которая мне очень интересна - веб разработка. Считаю данную профессию очень мобильной и нужной, как для предпринимательства, так для работы в офисе.</p>
+					<p>Планирую стать <strong>full stack web developer</strong> и углубить свои навыки либо в <strong>data science</strong>, либо в <strong>веб-дизайне</strong></p>
+					<p>Пробую себя во фрилансе и ищу место, где я смогу работать и учиться. Сейчас работаю в модульбанке по специальности "Ведущий специалист валютного контроля".</p>
 					<div class="icons_wrapper">
 						<p>Cвяжитесь со мной:</p> <a href="https://www.facebook.com/profile.php?id=100007342743697"><div class="facebook"></div></a> <a href="https://vk.com/vo.kupriyanov"><div class="vk"></div></a>
 					</div>
@@ -412,6 +140,6 @@ li {
 		<br/>
 
 	</div>
-
+<script src="scripts/monthcount.js"></script>
 </body>
 </html>

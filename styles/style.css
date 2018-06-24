@@ -1,0 +1,273 @@
+body{
+    background-color: black;
+    /*display: flex;*/
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*.flex-container {
+    }*/
+    .block {
+        display: flex;
+        justify-content: center;
+        background-color: black;
+    }
+    .icons {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    .tele {
+        margin-right: 100px;
+        width: 80px;
+        height: 80px;
+        transition: all linear .25s;
+        -webkit-transition: all linear .25s;
+    }
+    .tele:hover {
+        transform: scale(1.2);
+        width: 80px;
+        height: 80px;
+        margin-left: 0px;
+        transition: 1s;
+        cursor: pointer;
+
+        text-decoration: none;
+
+    }
+    .git {
+        width: 80px;
+        height: 80px;
+        transition: all linear .25s;
+        -webkit-transition: all linear .25s;
+        /*padding: 30px;*/
+    }
+    .git:hover {
+        transform: scale(1.2);
+        width: 80px;
+        height: 80px;
+        margin-left: 0px;
+        transition: 1s;
+        cursor: pointer;
+
+        text-decoration: none;
+    }
+
+/*------------------ТАБЫ-----------*/
+
+    
+    #body{
+        margin-top: 50px;
+        /*width:100%;*/
+        padding: 20px 20px 100px 20px;
+        background-color: black;
+    }
+    .tab-container{
+        background-color: #EAF2FF;
+        border-radius: 3px;
+        overflow: hidden;
+        width: 50%;
+        margin: auto;
+
+
+        /*display: flex;*/
+    }
+    
+    
+    .tab-title{
+        /*font-family: sans-serif;*/
+        color: #404040;
+        margin: 10px;
+        font-weight: normal;
+        font-size: 18px;
+    }
+    .tab-wrapper{
+        width: 100%;
+        overflow-x: scroll;
+        display: flex; 
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        /*font-family: sans-serif;*/
+    }
+    .tab-wrapper .tab-item,
+    .tab-wrapper input{display: none;}
+    .tab-wrapper .tab-item{
+        /*background-color: #fff;*/
+        width: calc(100% - 40px);
+        max-width: 100%;
+        padding: 20px;
+        order: 1;
+    }
+    .tab-wrapper label{
+        height: 35px;
+        line-height: 35px;
+        min-width: 50px;
+        padding: 0px 20px;
+        text-align: center;
+        color: #404040;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        cursor: pointer;
+
+    }
+
+    .tab-wrapper label:hover{
+    color: black;
+
+    }
+
+    .no-select{
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+    .tab-wrapper input:checked + label{
+        border-bottom: 3px solid black;
+        color: black;
+    }
+    .tab-wrapper input:checked + label + .tab-item{display: block;}
+
+    .tab-item {
+        background-color: #EAF2FF;
+        overflow: hidden;
+
+}
+
+#tab-content2 {
+    margin: 30px;
+}
+
+/*ТАБЫ конец*/
+
+.about-container {
+display: flex;
+flex-direction: row;
+padding: 40px;
+flex-wrap: wrap;
+}
+
+.myphoto {
+border-radius: 100px; /* Радиус скругления */
+border: 0px solid white; /* Параметры рамки */
+box-shadow: 0 0 7px #666; /* Параметры тени */
+width: 180px;
+height: 180px;
+}
+.info {
+font-family: 'Roboto', sans-serif;
+padding-left: 30px;
+margin-top: -15px;
+}
+.images-container {
+display: flex;
+justify-content: center;
+max-width: 100%;
+flex-wrap: wrap;
+}
+
+.for_icons {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.for_icons img {
+flex-grow: 0;
+flex-shrink: 1; 
+max-width: 100%;
+}
+figcaption {
+padding-top: 10px;
+font-size: 12px;
+}
+ul {
+list-style-image: url(../images/icon1.png); /* Путь к изображению маркера */
+}
+li {
+padding-top: 10px;
+}
+
+/*-----------------ИКОНКИ СВЯЗИ--------------------*/
+.facebook {
+width: 35px;
+height: 35px;
+background-image: url(../images/facebook1.png);
+}
+.facebook:hover {
+width: 35px;
+height: 35px;
+background-image: url(../images/facebook2.png);
+cursor: pointer;
+}
+.vk {
+width: 35px;
+height: 35px;
+background-image: url(../images/vk2.png);
+}
+.vk:hover {
+width: 35px;
+height: 35px;
+background-image: url(../images/vk1.png);
+cursor: pointer;
+}
+.icons_wrapper {
+display: flex;
+flex-direction: row;
+
+}
+
+.expirience p{
+margin-left: 50px;
+
+}
+.expirience h3{
+margin-left: 40px;
+
+}
+
+.expirience ul{
+margin-left: 60px;
+font-size: 12px;
+
+}
+
+.money {
+color: green;
+}
+    
+@media only screen and (max-width: 480px){ 
+        
+    #body{
+        margin-top: 50px;
+        width:100%;
+         padding: 0px;
+        background-color: black;
+            font-size: 1.3em;
+    }
+        
+    .tab-container{
+    width: 100%;
+    background-color: #EAF2FF;
+        border-radius: 3px;
+        overflow: hidden;
+/* 			margin: auto; */
+/* 			margin-left: -27px; */
+    }
+        
+    .tab-wrapper .tab-item,
+    .tab-wrapper input{display: none;}
+    .tab-wrapper .tab-item{
+        /*background-color: #fff;*/
+/* 			width: calc(100% - 40px); */
+        max-width: 100%;
+/* 			padding: 20px; */
+        order: 1;
+    }
+}	
