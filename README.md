@@ -1,1 +1,3 @@
-# Sindr0me.github.io
+# Sindr0me.github.io personal site
+
+About me

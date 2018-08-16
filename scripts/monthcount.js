@@ -1,4 +1,4 @@
-let workTime = document.querySelector('#work_time');
+let workTime = $('#work_time');
 
 var sdt = new Date('2016-08-23');
 var difdt = new Date(new Date() - sdt);
@@ -46,4 +46,4 @@ function textTimeMonth(month, monthWords) {
      return text;
 }
 
-workTime.innerHTML = `${textTimeYears(years, ['год', 'года','лет'])} и ${textTimeMonth (month, ['месяц', 'месяца', 'месяцев'])}`;
+workTime.html(`${textTimeYears(years, ['год', 'года','лет'])} и ${textTimeMonth (month, ['месяц', 'месяца', 'месяцев'])}`);
