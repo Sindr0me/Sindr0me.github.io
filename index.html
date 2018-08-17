@@ -5,32 +5,40 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<title>junior web разработчик Москва Верстка html работа с компьютером и в команде</title>
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
+
+	<div class="keepcalm"></div>
 	<div class="block">
-		<img class="cat" src="images/cat.jpg" alt="">
+		<div class="block__cat">
+			<div class="block__cat-cat"></div>
+		</div>
+
+		<div class="block__icons">
+			<a href="https://t.me/vkupriyanov"><img class="block__icons-tele" src="images/tele.png" alt=""></a>
+			<a href="https://www.facebook.com/profile.php?id=100007342743697"><img class="block__icons-headfacebook" src="images/logo-facebook.png" alt=""></a>
+			<a href="https://vk.com/vo.kupriyanov"><img class="block__icons-vkontakte" src="images/vkontakte.png" alt=""></a>
+			<a href="https://github.com/Sindr0me"><img class="block__icons-git" src="images/git.png" alt=""></a>
+		</div>
 	</div>
 
-	<div class="icons">
-		<div id="icons">
-		<a href="https://t.me/vkupriyanov"><img class="tele" src="images/tele.png" alt=""></a>
-		<a href="https://github.com/Sindr0me"><img class="git" src="images/git.png" alt=""></a>
-	</div>
 	</div>
 
-	<div id="body">
+	<section id="body" class="main-container">
 		<div class="tab-container ">
+			<div class="main-container__about">
 
-			<div class="about-container">
-				<img src="images/photo.jpg" alt="" class="myphoto">
-				<div class="info">
+				<div class="main-container__about__myphoto">
+				</div>
+
+				<div class="main-container__about__info">
 					<h1>Владимир Куприянов</h1>
 					<p>Возраст: 22 года</p>
 					<p>Город: Москва</p>
 					<p><strong>Junior web разработчик</strong></p>
-					<p>Желаемая зарплата: <span class="money">50,000 руб.</span>   Опыт работы в должности менее года</p>
+					<p>Желаемая зарплата: <span class="money">60,000 руб.</span>   Опыт работы в должности - менее года</p>
 				</div>
 			</div>
 
@@ -89,7 +97,8 @@
 					<ul>
 						<li>Уверенное владение HTML5 и CSS3</li>
 						<li>Валидная, кроссбраузерная вёрстка</li>
-						<li>Решение задач с использованием JavaScript</li>
+						<li>JavaScript/ES6</li>
+						<li>jQuery/jsRender/Kendo grid UI</li>
 						<li>Работа с AJAX, веб-сокетами</li>
 						<li>Владение графическими редакторами</li>
 						<li>Знание принципов ООП и паттернов проектирования</li>
@@ -104,43 +113,44 @@
 
 				<input type="radio" name="tab" id="tab2" />
 				<label class="tab-label no-select" for="tab2"><strong>Карьера</strong></label>
+
 				<div class="tab-item" id="tab-content2">
+					<a href="https://modulbank.ru/"><img src="images/modulbank.png" width="100%" alt=""></a>
 
-				<a href="https://modulbank.ru/"><img src="images/modulbank.png" width="100%" alt=""></a>
+					<div class="expirience">
+					<h2>Опыт работы в банке: <span id='work_time'></span></h2>
+					<h3>Должности:</h3>
+					<p>- Разработчик веб интерфейсов - <strong>настоящее время</strong></p>
+						<ul>
+							<li>Разработка интерфейса высоконагруженных внутрибанковских приложений;</li>
+							<li>Работа с SPA;</li>
+							<li>Работа с сервером, AJAX/json/xml;</li>
+							<li>MVC архитектура;</li>
+							<li>Bootstrap 3/4;</li>
+							<li>ES6, jQuery, jsRender, Kendo grid UI</li>
+						</ul>
+					<hr>
+					<p>- Ведущий специалист по валютному контролю - <strong>1 год 6 мес.</strong></p>
 
-				<div class="expirience">
-				<h2>Опыт работы в банке: <span id='work_time'></span></h2>
-				<h3>Должности:</h3>
-				<p>- Разработчик веб интерфейсов - <strong>настоящее время</strong></p>
-					<ul>
-						<li>Разработка интерфейса внутрибанковских приложений;</li>
-						<li>Работ с SPA;</li>
-						<li>Работа с сервером AJAX/json/xml;</li>
-						<li>MVC архитектура;</li>
-						<li>Bootstrap 3/4;</li>
-					</ul>
+						<ul>
+							<li>Исполнение функций валютного контролера;</li>
+							<li>Работа в команде;</li>
+							<li>Автоматизация процессов отдела с помощью внедрения идей;</li>
+							<li>Участие в улучшении рабочих процессов по методологии agile;</li>
+							<li>Знание валютного законодательства.</li>
+						</ul>
 
-				<p>- Ведущий специалист по валютному контролю - <strong>1 год 6 мес.</strong></p>
-
-					<ul>
-						<li>Исполнение функций валютного контролера;</li>
-						<li>Работа в команде;</li>
-						<li>Автоматизация процессов отдела с помощью внедрения идей;</li>
-						<li>Участие в улучшении рабочих процессов по методологии agile;</li>
-						<li>Знание валютного законодательства.</li>
-					</ul>
-
-					<p>- Специалист ввода данных - 4 мес.</p>
-				</div>
+						<p>- Специалист ввода данных - 4 мес.</p>
+					</div>
 
 				</div>
 
 				<input type="radio" name="tab" id="tab3" />
 				<label class="tab-label no-select" for="tab3"><strong>Обо мне</strong></label>
 				<div class="tab-item" id="tab-content3">
-					<p>Позитивный и открытый молодой человек. Быстро учусь, хорошо схватываю, грамотен и имею чувство стиля. Ищу себя в профессии, которая мне очень интересна - веб разработка. Считаю данную профессию очень мобильной и нужной, как для предпринимательства, так для работы в офисе.</p>
-					<p>Планирую стать <strong>full stack web developer</strong> и углубить свои навыки либо в <strong>data science</strong>, либо в <strong>веб-дизайне</strong></p>
-					<p>Пробую себя во фрилансе и ищу место, где я смогу работать и учиться. Сейчас работаю в модульбанке по специальности "Ведущий специалист валютного контроля".</p>
+					<p>Позитивный и открытый молодой человек. Быстро учусь, хорошо схватываю, грамоте и общению обучен. Ищу себя в профессии, которая мне очень интересна - веб разработка. Считаю данную область очень перспективной и нужной, как для предпринимательства, так для работы в офисе.</p>
+					<p>Планирую стать <strong>full stack web developer.</strong></p>
+					<p>Пробую себя во фрилансе, пишу свои проекты, углубляю и расширяю свои навыки. Сейчас работаю в АО КБ Модульбанк разработчиком веб-интерфейсов.</p>
 					<div class="icons_wrapper">
 						<p>Cвяжитесь со мной:</p><a href="https://www.facebook.com/profile.php?id=100007342743697"><div class="facebook"></div></a> <a href="https://vk.com/vo.kupriyanov"><div class="vk"></div></a>
 					</div>
@@ -151,7 +161,7 @@
 		<br/>
 		<br/>
 
-	</div>
+	</section>
 	<script src="scripts/fade.min.js"></script>
 <script src="scripts/monthcount.js"></script>
 </body>
