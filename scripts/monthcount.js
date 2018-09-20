@@ -1,49 +1,51 @@
-let workTime = $('#work_time');
+'use strict';
 
-var sdt = new Date('2016-08-23');
-var difdt = new Date(new Date() - sdt);
+const yearsArr = ['год', 'года','лет'],
+monthArr = ['месяц', 'месяца', 'месяцев'],
+daysArr = ['день', 'дня', 'дней'];
 
-years= difdt.toISOString().slice(0, 4) - 1970;
-month = difdt.getMonth();
+function getData(element, dateStart) {
+    let diffDate = new Date(new Date() - dateStart);
 
-function textTimeYears (years, yearsWords) {
-    console.log(yearsWords);
+    let years = diffDate.toISOString().slice(0, 4) - 1970,
+    month = diffDate.getMonth(),
+    days = diffDate.getDate();
+
+    if (years === 0) {
+        element.html(`${txtToTime (month, monthArr)} и ${txtToTime (days, daysArr)}`);
+    }
+    else if (month === 0) {
+        element.html(`${txtToTime(years, yearsArr)} и ${txtToTime (days, daysArr)}`);
+    }
+    else {
+        element.html(`${txtToTime(years, yearsArr)}, ${txtToTime (month, monthArr)} и ${txtToTime (days, daysArr)}`);
+    }
+};
+
+function txtToTime (date, arr) {
     let text = '';
+    let num = date % 100;
 
-    let num = years % 100;
     if (num > 19) {
         num = num % 10;
     }
 
-    if(num === 2) {
-       text = `${years} ${yearsWords[1]}`;
+    if(num === 2 || num === 3 || num === 4) {
+        text = `${date} ${arr[1]}`;
     } else if(num === 1) {
-        text = `${years} ${yearsWords[0]}`;
+        text = `${date} ${arr[0]}`;
     } else {
-        text = `${years} ${yearsWords[2]}`; 
+        text = `${date} ${arr[2]}`;
         }
-    
+
     return text;
-}
+};
 
-function textTimeMonth(month, monthWords) {
-    console.log(monthWords);
-    let text = '';
+getData($('#work_time'), new Date('2016-08-23'));
+getData($('#exp-in-work'), new Date('2018-07-06'));
 
-    let num = month % 100;
-    if (num > 19) {
-        num = num % 10;
-    }
-
-    if(num === 2) {
-        text = `${month} ${monthWords[1]}`;
-     } else if (num === 1) {
-         text = `${month} ${monthWords[0]}`;
-     } else {
-         text = `${month} ${monthWords[2]}`; 
-         }
-     
-     return text;
-}
-
-workTime.html(`${textTimeYears(years, ['год', 'года','лет'])} и ${textTimeMonth (month, ['месяц', 'месяца', 'месяцев'])}`);
+setInterval(function(){
+    console.info('update dates');
+    getData($('#work_time'), new Date('2016-08-23'));
+    getData($('#exp-in-work'), new Date('2018-07-06'));
+},100000);
