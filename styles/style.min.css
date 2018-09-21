@@ -14,20 +14,18 @@
 .block__cat{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.8em;
-    /* background: black;  */
-    /* display:block; */
-    width:60%;
-    height: 200px;
-    position: absolute;
-    top:10px;
-    left:20%;
-    
 
 }
 
 .block__cat h1 {
-    margin:0px;
-    padding:20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.8em;
+    position: absolute;
+    top:10px;
+    left:-10%;
+    margin:5px;
+    padding:5px;
+    transition:all linear .25s;
     background: black;
     color:white;
     mix-blend-mode: multiply;
@@ -35,9 +33,15 @@
 
 
 .block__cat h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.8em;
+    position: absolute;
+    transition:all linear .25s;
+    top:120px;
+    right:-10%;
     margin:0px;
     text-align: left;
-    padding:20px 20px 20px 200px;
+    padding:5px;
     background: black;
     color:white;
     mix-blend-mode: multiply;
